@@ -1,0 +1,30 @@
+# Dataset and caches (see data/README.md)
+data/*
+!data/README.md
+
+# Generated outputs
+outputs/*
+!outputs/README.md
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments: keep them outside the repo; the public tests run black on every **/*.py
+.venv/
+venv/
+env/
+github_workdir/
+
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+report/*.synctex.gz
+
+# OS
+.DS_Store
