@@ -3,7 +3,8 @@
 Usage (from the repository root, with data in data/dataset/):
     python run.py
 
-Current model: baseline preprocessing + logistic regression (gradient descent).
+Current model: "full" preprocessing (preprocessing.CONFIGS) + logistic
+regression with gradient descent.
     1. Fit preprocessing and the model on 80% of the training rows and choose
        the decision threshold that maximizes F1 on the remaining 20%.
     2. Refit preprocessing and the model on all training rows.
@@ -24,6 +25,7 @@ from implementations import logistic_regression, sigmoid
 from preprocessing import fit_preprocessor, load_data, transform
 
 SEED = 42
+PREPROCESSING = "full"
 GAMMA = 0.5
 MAX_ITERS = 500
 THRESHOLDS = np.linspace(0.05, 0.95, 91)
@@ -32,7 +34,7 @@ SUBMISSION_PATH = "outputs/submission.csv"
 
 def fit_and_score(x_fit, y_fit, feature_names, x_score):
     """Fit preprocessing and logistic regression, return probabilities on x_score."""
-    params = fit_preprocessor(x_fit, feature_names)
+    params = fit_preprocessor(x_fit, feature_names, PREPROCESSING)
     tx = transform(x_fit, params)
     w, _ = logistic_regression(y_fit, tx, np.zeros(tx.shape[1]), MAX_ITERS, GAMMA)
     return sigmoid(transform(x_score, params) @ w)
