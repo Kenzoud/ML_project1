@@ -56,7 +56,7 @@ def main():
     """Run all baselines and save their validation metrics."""
     x, _, y, _, _, names = load_data()
     tr, val = stratified_split(y, val_ratio=0.2, seed=SEED)
-    params = fit_preprocessor(x[tr], names)
+    params = fit_preprocessor(x[tr], names, "baseline")
     tx_tr, tx_val = transform(x[tr], params), transform(x[val], params)
     y_tr, y_val = y[tr], y[val]
     print(f"train {tx_tr.shape}, val {tx_val.shape}, positives {y_tr.mean():.4f}")

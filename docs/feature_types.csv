@@ -1,0 +1,322 @@
+feature,kind,missing_codes,zero_codes,nan_frac,n_values,min,max,pos_rate_if_nan,pos_rate_if_observed
+_STATE,drop,,,0.000,53,1,72,,0.088
+FMONTH,drop,,,0.000,12,1,12,,0.088
+IDATE,drop,,,0.000,414,1.01202e+06,1.2312e+07,,0.088
+IMONTH,drop,,,0.000,12,1,12,,0.088
+IDAY,drop,,,0.000,31,1,31,,0.088
+IYEAR,drop,,,0.000,2,2015,2016,,0.088
+DISPCODE,drop,,,0.000,2,1100,1200,,0.088
+SEQNO,drop,,,0.000,21780,2.015e+09,2.01502e+09,,0.088
+_PSU,drop,,,0.000,21780,2.015e+09,2.01502e+09,,0.088
+CTELENUM,drop,,,0.425,1,1,1,0.062,0.107
+PVTRESD1,categorical,,,0.425,2,1,2,0.062,0.107
+COLGHOUS,drop,,,1.000,1,1,1,0.088,0.156
+STATERES,drop,,,0.425,1,1,1,0.062,0.107
+CELLFON3,categorical,,,0.425,2,1,2,0.062,0.107
+LADULT,categorical,,,1.000,2,1,2,0.088,0.156
+NUMADULT,continuous,,,0.425,16,1,20,0.062,0.107
+NUMMEN,continuous,,,0.425,12,0,18,0.062,0.107
+NUMWOMEN,continuous,,,0.425,11,0,10,0.062,0.107
+CTELNUM1,drop,,,0.575,1,1,1,0.107,0.062
+CELLFON2,drop,,,0.575,1,1,1,0.107,0.062
+CADULT,categorical,,,0.575,2,1,2,0.107,0.062
+PVTRESD2,categorical,,,0.575,2,1,2,0.107,0.062
+CCLGHOUS,drop,,,0.998,1,1,1,0.089,0.006
+CSTATE,categorical,,,0.575,2,1,2,0.107,0.062
+LANDLINE,categorical,9 7,,0.577,4,1,9,0.107,0.062
+HHADULT,continuous,77 99,,0.587,25,1,99,0.106,0.063
+GENHLTH,categorical,9 7,,0.000,7,1,9,0.000,0.088
+PHYSHLTH,continuous,77 99,88,0.000,33,1,99,0.000,0.088
+MENTHLTH,continuous,77 99,88,0.000,33,1,99,,0.088
+POORHLTH,continuous,77 99,88,0.487,33,1,99,0.062,0.113
+HLTHPLN1,categorical,9 7,,0.000,4,1,9,,0.088
+PERSDOC2,categorical,9 7,,0.000,5,1,9,,0.088
+MEDCOST,categorical,9 7,,0.000,4,1,9,0.000,0.088
+CHECKUP1,categorical,9 7,,0.000,7,1,9,0.000,0.088
+BPHIGH4,categorical,9 7,,0.000,6,1,9,0.000,0.088
+BPMEDS,categorical,9 7,,0.598,4,1,9,0.038,0.163
+BLOODCHO,categorical,9 7,,0.000,4,1,9,,0.088
+CHOLCHK,categorical,9 7,,0.133,6,1,9,0.025,0.098
+TOLDHI2,categorical,9 7,,0.133,4,1,9,0.025,0.098
+CVDSTRK3,categorical,9 7,,0.000,4,1,9,,0.088
+ASTHMA3,categorical,9 7,,0.000,4,1,9,,0.088
+ASTHNOW,categorical,9 7,,0.866,4,1,9,0.083,0.124
+CHCSCNCR,categorical,9 7,,0.000,4,1,9,0.000,0.088
+CHCOCNCR,categorical,9 7,,0.000,4,1,9,,0.088
+CHCCOPD1,categorical,9 7,,0.000,4,1,9,,0.088
+HAVARTH3,categorical,9 7,,0.000,4,1,9,0.000,0.088
+ADDEPEV2,categorical,9 7,,0.000,4,1,9,,0.088
+CHCKIDNY,categorical,9 7,,0.000,4,1,9,,0.088
+DIABETE3,categorical,9 7,,0.000,6,1,9,0.200,0.088
+DIABAGE2,continuous,98 99,,0.871,98,1,99,0.069,0.221
+SEX,categorical,,,0.000,2,1,2,,0.088
+MARITAL,categorical,9,,0.000,7,1,9,,0.088
+EDUCA,categorical,9,,0.000,7,1,9,,0.088
+RENTHOM1,categorical,9 7,,0.000,5,1,9,,0.088
+NUMHHOL2,categorical,9 7,,0.425,4,1,9,0.062,0.107
+NUMPHON2,categorical,9,,0.970,8,1,9,0.088,0.112
+CPDEMO1,categorical,9 7,,0.425,4,1,9,0.062,0.107
+VETERAN3,categorical,9 7,,0.000,4,1,9,0.000,0.088
+EMPLOY1,categorical,9,,0.000,9,1,9,,0.088
+CHILDREN,continuous,77 99,88,0.000,25,1,99,0.000,0.088
+INCOME2,categorical,77 99,,0.008,10,1,99,0.072,0.088
+INTERNET,categorical,9 7,,0.010,4,1,9,0.075,0.088
+WEIGHT2,drop,,,0.012,550,50,9999,0.073,0.088
+HEIGHT3,drop,,,0.013,142,205,9999,0.073,0.089
+PREGNANT,categorical,9 7,,0.852,4,1,9,0.101,0.014
+QLACTLM2,categorical,9 7,,0.021,4,1,9,0.076,0.089
+USEEQUIP,categorical,9 7,,0.024,4,1,9,0.074,0.089
+BLIND,categorical,9 7,,0.025,4,1,9,0.073,0.089
+DECIDE,categorical,9 7,,0.027,4,1,9,0.074,0.089
+DIFFWALK,categorical,9 7,,0.028,4,1,9,0.074,0.089
+DIFFDRES,categorical,9 7,,0.029,4,1,9,0.074,0.089
+DIFFALON,categorical,9 7,,0.030,4,1,9,0.074,0.089
+SMOKE100,categorical,9 7,,0.032,4,1,9,0.075,0.089
+SMOKDAY2,categorical,9 7,,0.583,5,1,9,0.063,0.124
+STOPSMK2,categorical,9 7,,0.861,4,1,9,0.086,0.102
+LASTSMK2,categorical,77 99,,0.723,10,1,99,0.070,0.135
+USENOW3,categorical,9 7,,0.034,5,1,9,0.076,0.089
+ALCDAY5,drop,,,0.036,40,101,999,0.077,0.089
+AVEDRNK2,continuous,77 99,,0.521,48,1,99,0.111,0.064
+DRNK3GE5,continuous,77 99,88,0.522,43,1,99,0.111,0.064
+MAXDRNKS,continuous,77 99,,0.523,58,1,99,0.111,0.064
+FRUITJU1,drop,,,0.063,109,101,999,0.079,0.089
+FRUIT1,drop,,,0.066,134,101,999,0.080,0.089
+FVBEANS,drop,,,0.068,108,101,999,0.081,0.089
+FVGREEN,drop,,,0.071,115,101,999,0.081,0.089
+FVORANG,drop,,,0.072,103,101,999,0.081,0.089
+VEGETAB1,drop,,,0.075,133,101,999,0.081,0.089
+EXERANY2,categorical,9 7,,0.080,4,1,9,0.081,0.089
+EXRACT11,continuous,77 99,,0.329,77,1,99,0.115,0.075
+EXEROFT1,drop,,,0.333,115,101,999,0.115,0.075
+EXERHMM1,drop,,,0.333,194,1,999,0.115,0.075
+EXRACT21,continuous,77 99,88,0.334,78,1,99,0.115,0.075
+EXEROFT2,drop,,,0.552,99,101,999,0.106,0.066
+EXERHMM2,drop,,,0.553,168,1,999,0.106,0.066
+STRENGTH,drop,,,0.087,101,101,999,0.081,0.089
+LMTJOIN3,categorical,9 7,,0.692,4,1,9,0.058,0.155
+ARTHDIS2,categorical,9 7,,0.692,4,1,9,0.059,0.155
+ARTHSOCL,categorical,9 7,,0.692,5,1,9,0.059,0.155
+JOINPAIN,continuous,77 99,,0.698,13,0,99,0.059,0.155
+SEATBELT,categorical,9 7,,0.091,8,1,9,0.084,0.089
+FLUSHOT6,categorical,9 7,,0.093,4,1,9,0.084,0.089
+FLSHTMY2,continuous,,,0.569,28,12014,999999,0.071,0.111
+IMFVPLAC,continuous,77 99,,0.567,13,1,99,0.071,0.111
+PNEUVAC3,categorical,9 7,,0.095,4,1,9,0.084,0.089
+HIVTST6,categorical,9 7,,0.098,4,1,9,0.083,0.089
+HIVTSTD3,continuous,,,0.742,412,11985,999999,0.095,0.068
+WHRTST10,categorical,77 99,,0.742,11,1,99,0.095,0.068
+PDIABTST,categorical,9 7,,0.813,4,1,9,0.090,0.080
+PREDIAB1,categorical,9 7,,0.813,5,1,9,0.090,0.080
+INSULIN,categorical,9,,0.934,3,1,9,0.079,0.219
+BLDSUGAR,continuous,777 999,888,0.934,79,101,999,0.079,0.219
+FEETCHK2,continuous,777 999,888,0.934,72,101,999,0.079,0.219
+DOCTDIAB,continuous,77 99,88,0.934,47,1,99,0.079,0.219
+CHKHEMO3,continuous,77 99,88,0.934,41,1,99,0.079,0.219
+FEETCHK,continuous,77 99,88,0.934,45,1,99,0.079,0.219
+EYEEXAM,categorical,9 7,,0.934,7,1,9,0.079,0.219
+DIABEYE,categorical,9 7,,0.934,4,1,9,0.079,0.219
+DIABEDU,categorical,9 7,,0.934,4,1,9,0.079,0.219
+CAREGIV1,categorical,9 7,,0.754,5,1,9,0.085,0.098
+CRGVREL1,continuous,77 99,,0.946,17,1,99,0.088,0.095
+CRGVLNG1,categorical,9 7,,0.946,7,1,9,0.088,0.095
+CRGVHRS1,categorical,9 7,,0.946,6,1,9,0.088,0.095
+CRGVPRB1,continuous,77 99,,0.946,15,1,99,0.088,0.095
+CRGVPERS,categorical,9 7,,0.946,4,1,9,0.088,0.095
+CRGVHOUS,categorical,9 7,,0.946,4,1,9,0.088,0.095
+CRGVMST2,categorical,9,,0.946,8,1,9,0.088,0.095
+CRGVEXPT,categorical,9 7,,0.809,4,1,9,0.086,0.099
+VIDFCLT2,categorical,,,0.993,8,1,8,0.088,0.127
+VIREDIF3,categorical,,,0.993,7,1,7,0.088,0.127
+VIPRFVS2,categorical,9 7,,0.993,7,1,9,0.088,0.127
+VINOCRE2,categorical,77 99,,0.998,10,1,99,0.088,0.132
+VIEYEXM2,categorical,9 7,,0.994,8,1,9,0.088,0.096
+VIINSUR2,categorical,7,,0.993,4,1,8,0.088,0.128
+VICTRCT4,categorical,7,,0.993,4,1,7,0.088,0.128
+VIGLUMA2,categorical,7,,0.993,3,1,7,0.088,0.128
+VIMACDG2,categorical,7,,0.993,3,1,7,0.088,0.128
+CIMEMLOS,categorical,9 7,,0.736,4,1,9,0.076,0.121
+CDHOUSE,categorical,9 7,,0.971,7,1,9,0.084,0.227
+CDASSIST,categorical,9 7,,0.971,7,1,9,0.084,0.227
+CDHELP,categorical,9 7,,0.991,7,1,9,0.086,0.287
+CDSOCIAL,categorical,9 7,,0.971,7,1,9,0.084,0.227
+CDDISCUS,categorical,9 7,,0.971,4,1,9,0.084,0.227
+WTCHSALT,categorical,9 7,,0.907,4,1,9,0.086,0.109
+LONGWTCH,continuous,777 999,,0.943,136,101,999,0.086,0.134
+DRADVISE,categorical,9 7,,0.907,4,1,9,0.086,0.109
+ASTHMAGE,continuous,77 99,,0.998,72,11,99,0.088,0.150
+ASATTACK,categorical,7,,0.999,3,1,7,0.088,0.169
+ASERVIST,categorical,,88,0.999,8,1,98,0.088,0.193
+ASDRVIST,continuous,,88,0.999,11,1,98,0.088,0.193
+ASRCHKUP,continuous,99,88,0.999,18,1,99,0.088,0.170
+ASACTLIM,continuous,777 999,888,0.999,25,1,999,0.088,0.170
+ASYMPTOM,categorical,9 7,,0.999,8,1,9,0.088,0.169
+ASNOSLEP,categorical,7,,0.999,7,1,8,0.088,0.202
+ASTHMED3,categorical,9 7,,0.999,6,1,9,0.088,0.169
+ASINHALR,categorical,9,,0.999,9,1,9,0.088,0.169
+HAREHAB1,categorical,9 7,,0.998,4,1,9,0.086,1.000
+STREHAB1,categorical,9 7,,0.998,4,1,9,0.088,0.358
+CVDASPRN,categorical,9 7,,0.957,4,1,9,0.088,0.094
+ASPUNSAF,categorical,9 7,,0.970,5,1,9,0.090,0.045
+RLIVPAIN,categorical,9 7,,0.987,4,1,9,0.087,0.208
+RDUCHART,categorical,7,,0.987,3,1,7,0.087,0.208
+RDUCSTRK,categorical,9 7,,0.987,4,1,9,0.087,0.208
+ARTTODAY,categorical,9 7,,0.956,6,1,9,0.085,0.155
+ARTHWGT,categorical,9 7,,0.956,4,1,9,0.085,0.155
+ARTHEXER,categorical,9 7,,0.956,4,1,9,0.085,0.155
+ARTHEDU,categorical,9 7,,0.956,4,1,9,0.085,0.155
+TETANUS,categorical,9 7,,0.908,6,1,9,0.087,0.106
+HPVADVC2,categorical,9 7,,0.975,5,1,9,0.090,0.022
+HPVADSHT,categorical,77 99,,0.997,5,1,99,0.089,0.010
+SHINGLE2,categorical,9 7,,0.937,4,1,9,0.085,0.136
+HADMAM,categorical,9 7,,0.948,4,1,9,0.089,0.068
+HOWLONG,categorical,9 7,,0.958,7,1,9,0.089,0.078
+HADPAP2,categorical,9 7,,0.948,4,1,9,0.089,0.068
+LASTPAP2,categorical,9 7,,0.952,7,1,9,0.089,0.068
+HPVTEST,categorical,9 7,,0.948,4,1,9,0.089,0.068
+HPLSTTST,categorical,9 7,,0.984,7,1,9,0.089,0.048
+HADHYST2,categorical,9 7,,0.949,4,1,9,0.089,0.069
+PROFEXAM,categorical,9 7,,0.987,4,1,9,0.089,0.063
+LENGEXAM,categorical,9 7,,0.989,7,1,9,0.089,0.063
+BLDSTOOL,categorical,9 7,,0.877,4,1,9,0.084,0.121
+LSTBLDS3,categorical,9 7,,0.955,7,1,9,0.086,0.134
+HADSIGM3,categorical,9 7,,0.877,4,1,9,0.084,0.121
+HADSGCO1,categorical,9 7,,0.911,4,1,9,0.084,0.128
+LASTSIG3,categorical,9,,0.911,8,1,9,0.084,0.128
+PCPSAAD2,categorical,9 7,,0.985,4,1,9,0.088,0.121
+PCPSADI1,categorical,9 7,,0.985,4,1,9,0.088,0.121
+PCPSARE1,categorical,9 7,,0.985,4,1,9,0.088,0.121
+PSATEST1,categorical,9 7,,0.985,4,1,9,0.088,0.121
+PSATIME,categorical,9 7,,0.992,7,1,9,0.088,0.147
+PCPSARS1,categorical,9 7,,0.992,7,1,9,0.088,0.147
+PCPSADE1,categorical,9,,0.998,5,1,9,0.088,0.164
+PCDMDECN,categorical,,,0.999,8,1,21,0.088,0.179
+SCNTMNY1,categorical,9 7,,0.843,8,1,9,0.087,0.094
+SCNTMEL1,categorical,9 7,,0.834,8,1,9,0.087,0.094
+SCNTPAID,categorical,9 7,,0.921,6,1,9,0.093,0.036
+SCNTWRK1,continuous,77 99,88,0.921,93,1,99,0.093,0.036
+SCNTLPAD,categorical,9 7,,0.942,6,1,9,0.084,0.152
+SCNTLWK1,continuous,77 99,88,0.913,92,1,99,0.083,0.147
+SXORIENT,categorical,9 7,,0.621,6,1,9,0.089,0.088
+TRNSGNDR,categorical,9 7,,0.622,6,1,9,0.089,0.088
+RCSGENDR,categorical,9,,0.864,3,1,9,0.097,0.032
+RCSRLTN2,categorical,9,,0.865,8,1,9,0.097,0.032
+CASTHDX2,categorical,9 7,,0.881,4,1,9,0.096,0.031
+CASTHNO2,categorical,9 7,,0.985,4,1,9,0.089,0.044
+EMTSUPRT,categorical,9 7,,0.954,7,1,9,0.089,0.073
+LSATISFY,categorical,9 7,,0.954,6,1,9,0.089,0.073
+ADPLEASR,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+ADDOWN,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+ADSLEEP,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+ADENERGY,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+ADEAT1,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+ADFAIL,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+ADTHINK,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+ADMOVE,continuous,77 99,88,0.954,17,1,99,0.087,0.117
+MISTMNT,categorical,9 7,,0.954,4,1,9,0.087,0.117
+ADANXEV,categorical,9 7,,0.954,4,1,9,0.087,0.117
+QSTVER,categorical,,,0.000,8,10,23,,0.088
+QSTLANG,categorical,,,0.000,3,1,3,0.071,0.088
+MSCODE,categorical,,,0.434,4,1,5,0.063,0.107
+_STSTR,drop,,,0.000,1306,11011,722019,,0.088
+_STRWT,drop,,,0.000,1304,0.945246,1603.29,0.000,0.088
+_RAWRAKE,drop,,,0.000,12,0.333333,5,,0.088
+_WT2RAKE,drop,,,0.000,5528,0.362773,3191.95,,0.088
+_CHISPNC,categorical,9,,0.276,3,1,9,0.094,0.086
+_CRACE1,categorical,77 99,,0.852,9,1,99,0.098,0.032
+_CPRACE,categorical,77 99,,0.852,9,1,99,0.098,0.032
+_CLLCPWT,drop,,,0.864,20452,7.81393,25755,0.097,0.032
+_DUALUSE,drop,,,0.000,3,1,9,,0.088
+_DUALCOR,drop,,,0.375,106,0.0794375,0.920562,0.082,0.092
+_LLCPWT,drop,,,0.000,216913,1.43351,33134.9,,0.088
+_RFHLTH,categorical,9,,0.000,3,1,9,,0.088
+_HCVU651,categorical,9,,0.000,3,1,9,,0.088
+_RFHYPE5,categorical,9,,0.000,3,1,9,,0.088
+_CHOLCHK,categorical,9,,0.000,4,1,9,,0.088
+_RFCHOL,categorical,9,,0.133,3,1,9,0.025,0.098
+_LTASTH1,categorical,9,,0.000,3,1,9,,0.088
+_CASTHM1,categorical,9,,0.000,3,1,9,,0.088
+_ASTHMS1,categorical,9,,0.000,4,1,9,,0.088
+_DRDXAR1,categorical,,,0.006,2,1,2,0.114,0.088
+_PRACE1,categorical,77 99,,0.000,10,1,99,,0.088
+_MRACE1,categorical,77 99,,0.000,9,1,99,,0.088
+_HISPANC,categorical,9,,0.000,3,1,9,,0.088
+_RACE,categorical,9,,0.000,9,1,9,,0.088
+_RACEG21,categorical,9,,0.000,3,1,9,,0.088
+_RACEGR3,categorical,9,,0.000,6,1,9,,0.088
+_RACE_G1,categorical,,,0.017,5,1,5,0.098,0.088
+_AGEG5YR,continuous,14,,0.000,14,1,14,,0.088
+_AGE65YR,categorical,,,0.000,3,1,3,,0.088
+_AGE80,continuous,,,0.000,63,18,80,,0.088
+_AGE_G,categorical,,,0.000,6,1,6,,0.088
+HTIN4,continuous,,,0.039,52,36,95,0.067,0.089
+HTM4,continuous,,,0.035,103,0.91,2.41,0.070,0.089
+WTKG3,continuous,,,0.070,541,22.68,289.85,0.063,0.090
+_BMI5,continuous,,,0.083,3524,12.02,97.65,0.061,0.091
+_BMI5CAT,categorical,,,0.083,4,1,4,0.061,0.091
+_RFBMI5,categorical,9,,0.000,3,1,9,,0.088
+_CHLDCNT,categorical,9,,0.000,7,1,9,,0.088
+_EDUCAG,categorical,9,,0.000,5,1,9,,0.088
+_INCOMG,categorical,9,,0.000,6,1,9,,0.088
+_SMOKER3,categorical,9,,0.000,5,1,9,,0.088
+_RFSMOK3,categorical,9,,0.000,3,1,9,,0.088
+DRNKANY5,categorical,9 7,,0.000,4,1,9,,0.088
+DROCDY3_,continuous,900,,0.000,36,0,900,,0.088
+_RFBING5,categorical,9,,0.000,3,1,9,,0.088
+_DRNKWEK,continuous,99900,,0.000,237,0,99900,,0.088
+_RFDRHV5,categorical,9,,0.000,3,1,9,,0.088
+FTJUDA1_,continuous,,,0.086,97,0,99,0.085,0.089
+FRUTDA1_,continuous,,,0.082,121,0,99,0.086,0.089
+BEANDAY_,continuous,,,0.090,96,0,99,0.090,0.088
+GRENDAY_,continuous,,,0.085,102,0,99,0.086,0.089
+ORNGDAY_,continuous,,,0.088,92,0,99,0.085,0.089
+VEGEDA1_,continuous,,,0.093,117,0,99,0.088,0.088
+_MISFRTN,categorical,,,0.000,3,0,2,,0.088
+_MISVEGN,categorical,,,0.000,5,0,4,,0.088
+_FRTRESP,categorical,,,0.000,2,0,1,,0.088
+_VEGRESP,categorical,,,0.000,2,0,1,,0.088
+_FRUTSUM,continuous,,,0.098,500,0,150,0.089,0.088
+_VEGESUM,continuous,,,0.115,1024,0,199.29,0.095,0.087
+_FRTLT1,categorical,9,,0.000,3,1,9,,0.088
+_VEGLT1,categorical,9,,0.000,3,1,9,,0.088
+_FRT16,categorical,,,0.000,2,0,1,,0.088
+_VEG23,categorical,,,0.000,2,0,1,,0.088
+_FRUITEX,categorical,,,0.000,3,0,2,,0.088
+_VEGETEX,categorical,,,0.000,3,0,2,,0.088
+_TOTINDA,categorical,9,,0.000,3,1,9,,0.088
+METVL11_,continuous,,,0.331,29,0,12.8,0.115,0.075
+METVL21_,continuous,,,0.343,29,0,12.8,0.114,0.075
+MAXVO2_,continuous,999,,0.000,163,5.55,999,,0.088
+FC60_,continuous,999,,0.000,156,0.95,999,,0.088
+ACTIN11_,categorical,,,0.338,3,0,2,0.114,0.075
+ACTIN21_,categorical,,,0.350,3,0,2,0.113,0.075
+PADUR1_,continuous,,,0.347,192,1,599,0.115,0.074
+PADUR2_,continuous,,,0.563,166,1,599,0.106,0.065
+PAFREQ1_,continuous,,,0.339,110,0.233,99,0.115,0.074
+PAFREQ2_,continuous,,,0.557,94,0.233,99,0.106,0.066
+_MINAC11,continuous,,,0.351,729,0,53460,0.115,0.074
+_MINAC21,continuous,,,0.356,576,0,47520,0.114,0.074
+STRFREQ_,continuous,99,,0.099,96,0,99,0.083,0.089
+PAMISS1_,categorical,9,,0.000,3,0,9,,0.088
+PAMIN11_,continuous,,,0.358,857,0,53460,0.114,0.074
+PAMIN21_,continuous,,,0.363,672,0,47520,0.113,0.074
+PA1MIN_,continuous,,,0.344,2666,0,54000,0.114,0.075
+PAVIG11_,continuous,,,0.347,534,0,14250,0.115,0.074
+PAVIG21_,continuous,,,0.357,415,0,19200,0.114,0.074
+PA1VIGM_,continuous,,,0.341,1373,0,19200,0.114,0.075
+_PACAT1,categorical,9,,0.000,5,1,9,,0.088
+_PAINDX1,categorical,9,,0.000,3,1,9,,0.088
+_PA150R2,categorical,9,,0.000,4,1,9,,0.088
+_PA300R2,categorical,9,,0.000,4,1,9,,0.088
+_PA30021,categorical,9,,0.000,3,1,9,,0.088
+_PASTRNG,categorical,9,,0.000,3,1,9,,0.088
+_PAREC1,categorical,9,,0.000,5,1,9,,0.088
+_PASTAE1,categorical,9,,0.000,3,1,9,,0.088
+_LMTACT1,categorical,9,,0.006,4,1,9,0.114,0.088
+_LMTWRK1,categorical,9,,0.006,4,1,9,0.114,0.088
+_LMTSCL1,categorical,9,,0.006,5,1,9,0.114,0.088
+_RFSEAT2,categorical,9,,0.000,3,1,9,,0.088
+_RFSEAT3,categorical,9,,0.000,3,1,9,,0.088
+_FLSHOT6,categorical,9,,0.644,3,1,9,0.046,0.164
+_PNEUMO2,categorical,9,,0.644,3,1,9,0.046,0.164
+_AIDTST3,categorical,9,,0.098,3,1,9,0.083,0.089
