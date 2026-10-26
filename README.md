@@ -29,7 +29,9 @@ Put the data in `data/dataset/` as described in [data/README.md](data/README.md)
 | `preprocessing.py` | Cached data loading, `fit_preprocessor` / `transform`, preprocessing variants (`CONFIGS`) |
 | `evaluation.py` | Stratified split and k-fold, F1/precision/recall/accuracy, ROC AUC, threshold selection |
 | `baselines.py` | Baseline models on an 80/20 stratified split (writes `outputs/baselines.json`) |
-| `ablation.py` | Preprocessing ablation study (writes `outputs/ablation.json`) |
+| `ablation.py` | Preprocessing ablation on a single 80/20 split (writes `outputs/ablation.json`) |
+| `cross_validation.py` | K-fold CV with preprocessing refitted per fold, out-of-fold scores, fold summaries |
+| `model_selection.py` | CV ablation, λ selection and one-time holdout scoring (writes `outputs/model_selection.json`, ~20 min) |
 | `run.py` | Reproduces the selected AIcrowd submission (`outputs/submission.csv`) |
 | `tests/` | Unit tests |
 | `notebooks/` | EDA and experiments |
@@ -50,8 +52,10 @@ python run.py
 ```
 
 The first run parses the CSVs (~1 min) and caches them in `data/cache.npz`.
-`run.py` fits on 80% of the training rows, picks the F1-maximizing threshold
-on the other 20%, refits on all rows and writes `outputs/submission.csv`.
+`run.py` fits the `"full"` preprocessing and L2-regularized logistic
+regression (λ=1e-4, 500 GD steps, γ=0.5) on all labeled rows and writes
+`outputs/submission.csv`, using threshold 0.20. λ and the threshold come from
+`python model_selection.py` (see below).
 
 Main metric: F1 of the positive class. AIcrowd does not name its metric, but
 leaderboard values (~0.46) are consistent with F1, not accuracy, which is
@@ -99,8 +103,39 @@ Preprocessing ablation (each row adds one step; `python ablation.py`):
 
 Logistic regression: 500 GD steps with γ=0.5 (1000 and 2000 steps change
 the training loss by < 1e-4). The threshold is chosen on the same
-validation split, so scores are slightly optimistic. AIcrowd test F1:
-0.411 for the baseline logistic regression.
+validation split, so scores are slightly optimistic.
+
+## Model selection (`python model_selection.py`)
+
+The 20% split above becomes an untouched holdout. Everything is selected by
+5-fold stratified cross-validation on the other 80% (262,508 rows), with
+preprocessing refitted inside every fold. One threshold is chosen on the
+pooled out-of-fold scores; F1 is then reported as mean ± std over folds.
+ΔF1 is the paired fold-wise difference to the previous row.
+
+| Config (logistic, λ=0) | CV F1 | ΔF1 | CV AUC | Ridge CV F1 |
+|---|---:|---:|---:|---:|
+| `baseline` | 0.411 ± 0.004 | – | 0.849 | 0.406 |
+| `clean_codes` | 0.424 ± 0.004 | +0.013 ± 0.002 | 0.858 | 0.415 |
+| `one_hot` | 0.435 ± 0.006 | +0.011 ± 0.004 | 0.863 | 0.425 |
+| `full` | 0.436 ± 0.005 | +0.000 ± 0.001 | 0.863 | 0.426 |
+
+| λ (full config) | 0 | 1e-6 | 1e-5 | 1e-4 | 1e-3 | 1e-2 |
+|---|---:|---:|---:|---:|---:|---:|
+| CV F1 | 0.4355 | 0.4355 | 0.4356 | **0.4356** | 0.4351 | 0.4327 |
+
+Regularization barely matters below λ=1e-3 (262k rows for 638 features).
+λ=1e-4 has the best mean F1 and is used, with threshold 0.20.
+
+Holdout (65,627 rows, scored once):
+
+| Model | F1 | Precision | Recall | Accuracy | AUC |
+|---|---:|---:|---:|---:|---:|
+| Baseline logistic (t=0.20) | 0.417 | 0.340 | 0.539 | 0.867 | 0.851 |
+| Selected: full, λ=1e-4 (t=0.20) | **0.438** | 0.363 | 0.554 | 0.875 | 0.866 |
+
+AIcrowd test F1: 0.411 for the baseline logistic regression, 0.447 for full
+preprocessing with λ=0 and threshold 0.21.
 
 ## Tests
 
