@@ -156,10 +156,3 @@ pytest --github_link <absolute path to this repo> .
 submitting, rerun with the GitHub URL of the final commit
 (`https://github.com/<org>/<repo>/tree/<commit-hash>`).
 
-## Team
-
-| Member | Area |
-|---|---|
-| A | `implementations.py`, tests |
-| B | EDA, preprocessing, feature engineering |
-| C | Evaluation, model selection, report |
