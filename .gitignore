@@ -28,3 +28,6 @@ report/*.synctex.gz
 
 # OS
 .DS_Store
+report/*.fdb_latexmk
+report/*.fls
+report/main.pdf
